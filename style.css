@@ -13,11 +13,34 @@ img {
     width: 50px;
 }
 
-h1 {
+header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+h1 {
     font-size: 40px;
+}
+
+#reset {
+    border: 2px solid #1a535c;
+    border-radius: 15px;
+    background: #ffffff;
+    color: #4ecdc4;
+    cursor: pointer;
+    width: 90px;
+    font-size: 18px;
+    font-weight: bolder;
+    transition: 0.2s ease;
+}
+
+#reset:hover {
+    border: 2px solid #4ecdc4;
+    background: #ff6b6b;
+    color: #ffe66d;
+    transform: scale(1.1);
 }
 
 .game-options {
@@ -25,7 +48,7 @@ h1 {
     justify-content: space-evenly;
     width: 500px;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 140px;
 }
 
 .option {
@@ -44,4 +67,57 @@ h1 {
 
 .option:hover {
     transform: scale(1.1);
+}
+
+.player-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.player-select {
+    border: 2px solid #009a4e;
+    border-radius: 5px;
+    width: 360px;
+    height: 220px;
+}
+
+.form-select {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+label {
+    font-size: 20px;
+    margin-right: 10px;
+    float: left;
+}
+
+.player-input {
+    border: 1px solid #00a2ff;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+.start-btn {
+    border: 2px solid #1d3557;
+    border-radius: 15px;
+    background: #f1faee;
+    cursor: pointer;
+    width: 90px;
+    font-size: 18px;
+    transition: 0.2s ease;
+}
+
+.start-btn:hover {
+    background: #e63946;
+    color: #f1faee;
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none;
 }
